@@ -14,6 +14,8 @@
     <script type="text/javascript"
             src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
 
+    <!-- Fontawesome -->
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">-->
     <!-- Custom css -->
     <link rel="stylesheet" href="css/main.css">
 
@@ -122,15 +124,17 @@
                         </div>
                         <div class="user_info">
                             <span>Chat with izamha</span>
-                            <p>1767 Messages</p>
+                            <p>7 Messages</p>
                         </div>
                         <div class="video_cam">
                             <span><i class="fas fa-video" data-toggle="tooltip" data-placement="top"
                                      title="Video Chat"></i></span>
-                            <span><i class="fas fa-phone" data-toggle="tooltip" data-placement="top" title="Call"></i></span>
+                            <span><i class="fas fa-phone" data-toggle="tooltip" data-placement="top"
+                                     title="Call"></i></span>
                         </div>
                     </div>
-                    <span id="action_menu_btn"><i class="fas fa-ellipsis-v"></i></span>
+                    <span id="action_menu_btn"><i class="fas fa-ellipsis-v" data-toggle="tooltip" data-placement="top"
+                                                  title="More..."></i></span>
                     <div class="action_menu">
                         <ul>
                             <li><i class="fas fa-user-circle"></i> View profile</li>
@@ -228,10 +232,23 @@
                         </div>
                         <textarea name="" class="form-control type_msg" placeholder="Type your message..."></textarea>
                         <div class="input-group-append">
-                            <span class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></span>
+                            <span class="input-group-text send_btn"><i class="fas fa-location-arrow"
+                                                                       data-toggle="tooltip" data-placement="top"
+                                                                       title="Send"></i></span>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="header">
+            <h3 class="settings"><span class="fa fa-cogs" data-toggle="tooltip" data-placement="top"
+                                       title="Settings"></span></h3>
+            <div class="show-settings">
+                <ul>
+                    <li><i class="fas fa-share"></i>Share</li>
+                    <li><i class="fas fa-hands-helping"></i>Help</li>
+                    <li><i class="fas fa-users"></i>Logout</li>
+                </ul>
             </div>
         </div>
     </div>
