@@ -14,6 +14,11 @@
     <script type="text/javascript"
             src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
 
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+
     <!-- Fontawesome -->
     <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">-->
     <!-- Custom css -->
@@ -26,16 +31,32 @@
 </head>
 <!-- Coded With Love By izamha -->
 <body>
-<div class="container-fluid">
+<div class="container-fluid" style="background-image: url(img/background.png); background-size: inherit;">
     <div class="row justify-content-center">
+        <div class="welcome-message">
+            <h3><b><span class="fa fa-comment-dots"></span>Chat Away<span class="fa fa-comment-dots"></span></b></h3>
+        </div>
         <div class="col-md-4 col-xl-3 chat">
             <div class="card mb-sm-3 mb-md-0 contacts_card">
                 <div class="card-header">
                     <div class="input-group">
-                        <input type="text" placeholder="Search..." name="" class="form-control search">
+                        <input type="text" placeholder="Search contacts..." name="" class="form-control search">
                         <div class="input-group-prepend">
                             <span class="input-group-text search_btn"><i class="fas fa-search"></i></span>
                         </div>
+                    </div>
+                    <div class="input-group" style="margin-top: 0.5rem;">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                   value="option1" checked>
+                            <label class="form-check-label" for="inlineRadio1"><b>Contacts</b></label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                   value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><b>Groups</b></label>
+                        </div>
+                        <span class="fas fa-user-plus"></span>
                     </div>
                 </div>
                 <div class="card-body contacts_body">
@@ -50,21 +71,20 @@
                                 </div>
                                 <div class="user_info">
                                     <span>izamha</span>
-                                    <p>izamha is online</p>
+                                    <p style="color: #4cd137;">typing...</p>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="d-flex bd-highlight">
                                 <div class="img_cont">
-                                    <img
-                                            src="img/l.png"
-                                            class="rounded-circle user_img" alt="Profile Image">
+                                    <img src="img/l.png"
+                                         class="rounded-circle user_img" alt="Profile Image">
                                     <span class="online_icon offline"></span>
                                 </div>
                                 <div class="user_info">
-                                    <span>Leoncie</span>
-                                    <p>Leoncie left 7 mins ago.</p>
+                                    <span>Leoncié</span>
+                                    <p>Leoncié left 7 mins ago.</p>
                                 </div>
                             </div>
                         </li>
@@ -77,7 +97,7 @@
                                 </div>
                                 <div class="user_info">
                                     <span>Pacifique</span>
-                                    <p>Pacifique is online</p>
+                                    <p>Pacifique is online.</p>
                                 </div>
                             </div>
                         </li>
@@ -123,16 +143,15 @@
                             <span class="online_icon"></span>
                         </div>
                         <div class="user_info">
-                            <span>Chat with izamha</span>
-                            <p>7 Messages</p>
+                            <span><b>izamha</b></span>
+                            <p style="color: #4cd137;">typing...</p>
                         </div>
                         <div class="video_cam">
-                            <span><i class="fas fa-video" data-toggle="tooltip" data-placement="top"
-                                     title="Video Chat"></i></span>
-                            <span><i class="fas fa-phone" data-toggle="tooltip" data-placement="top"
-                                     title="Call"></i></span>
+                            <span><i class="fas fa-cloud-sun" data-toggle="tooltip" data-placement="top"
+                                     title="Day and Night"></i></span>
                         </div>
                     </div>
+
                     <span id="action_menu_btn"><i class="fas fa-ellipsis-v" data-toggle="tooltip" data-placement="top"
                                                   title="More..."></i></span>
                     <div class="action_menu">
@@ -228,9 +247,13 @@
                 <div class="card-footer">
                     <div class="input-group">
                         <div class="input-group-append">
-                            <span class="input-group-text attach_btn"><i class="fas fa-paperclip"></i></span>
+                            <span class="input-group-text attach-btn-emoji"><i class="fas fa-tired"></i></span>
                         </div>
-                        <textarea name="" class="form-control type_msg" placeholder="Type your message..."></textarea>
+                        <div class="input-group-append">
+                            <span class="input-group-text attach-btn-paperclip"><i class="fas fa-paperclip"></i></span>
+                        </div>
+                        <textarea name="" class="form-control type_msg" placeholder="Type a message..." rows="1"
+                                  cols="1"></textarea>
                         <div class="input-group-append">
                             <span class="input-group-text send_btn"><i class="fas fa-location-arrow"
                                                                        data-toggle="tooltip" data-placement="top"
@@ -259,7 +282,7 @@
                 <a href="#">Terms of Service</a> |
                 <a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a>
             </p>
-            <p><b>&copy;2021 Group VII, HCD Class Project</b></p>
+            <p><b>&copy;2021 Group VII, HCD Class Project <span class="fa fa-code-branch"></span></b></p>
         </div>
     </div>
 </div>
